@@ -1,4 +1,4 @@
-# Summary of Work Done Using DINO Model
+# Exploring Sign Language Recognition with DINO's Self-Attention Mechanism
 
 ## Objective:
 Enhance the recognition and understanding of micro and macro features of sign language gestures using the self-attention mechanisms of the DINO model.
