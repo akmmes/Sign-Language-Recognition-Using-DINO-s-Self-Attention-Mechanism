@@ -1,4 +1,4 @@
-# Summary of Work Done Using DINO Model
+# Summary of Work Done Using DINO Model for Irish Sign Language
 
 ## Objective:
 Enhance the recognition and understanding of micro and macro features of sign language gestures using the self-attention mechanisms of the DINO model.
