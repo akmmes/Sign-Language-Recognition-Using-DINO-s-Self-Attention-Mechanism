@@ -1,4 +1,4 @@
-# Summary of Work Done Using DINO Model for Irish Sign Language
+# Summary of Work Done Using DINO Model
 
 ## Objective:
 Enhance the recognition and understanding of micro and macro features of sign language gestures using the self-attention mechanisms of the DINO model.
@@ -9,6 +9,15 @@ Enhance the recognition and understanding of micro and macro features of sign la
 - **DINO Small 16x16**
 - **DINO Base 8x8**
 - **DINO Base 16x16**
+
+## Dataset:
+The dataset used for this project is the **Irish Sign Language (ISL) Dataset**, which is available on [ResearchGate](https://www.researchgate.net/publication/319493254_A_Dataset_for_Irish_Sign_Language_Recognition).
+
+### Key Information about the Dataset:
+- **Dataset Name**: A Dataset for Irish Sign Language Recognition
+- **Content**: This dataset consists of images for various hand gestures representing Irish Sign Language (ISL) symbols. It includes gestures for different words and phrases commonly used in Irish Sign Language.
+- **Image Format**: The dataset contains pre-captured images of hand gestures, which were used for training the model to understand and recognize specific gestures.
+- **Application**: This dataset is particularly useful for training models for sign language recognition, enabling the automation of sign language interpretation through computer vision.
 
 ## Approach:
 1. **Model Utilization**:  
@@ -43,7 +52,8 @@ The **DINO ResNet-50** model is a convolutional neural network (CNN)-based archi
 - ResNet-50 excels at extracting hierarchical features but does **not** include an attention mechanism like transformer-based models.
 - It generates **feature maps** that represent activations of learned features across spatial regions of the image, though without the explicit focus of attention maps.
 
-![Visualization of attention maps of Dino_resnet50](https://prod-files-secure.s3.us-west-2.amazonaws.com/5dfa7e63-6032-4d84-bead-312aba22a447/0368043e-0710-46ae-8e65-81f7944e08aa/image.png)
+![DINO ResNet-50 Attention Map](Results/Resnet_50.png)  
+*DINO ResNet-50 Attention Map*
 
 ---
 
@@ -55,9 +65,11 @@ The **DINO Small** models (ViT-S/8 and ViT-S/16) demonstrated strong capabilitie
 - **ViT-S/16** (with 16x16 patches) offers a more **global** view, sacrificing some detail for computational efficiency.
 - Both models showed a distributed focus across multiple attention heads, emphasizing different levels of detail and the overall hand structure.
 
-![Visualization of attention maps of Dino_Small_8 for five Irish Sign Language hand signs](https://prod-files-secure.s3.us-west-2.amazonaws.com/5dfa7e63-6032-4d84-bead-312aba22a447/fd7afffa-f02f-4a6a-80c3-6ba6166f8c12/download_(1).png)
+![DINO Small 8 Attention Map](Results/DINO_Small_8.png)  
+*DINO Small 8 Attention Map*
 
-![Visualization of attention maps of Dino_Small_16 for five Irish Sign Language hand signs](https://prod-files-secure.s3.us-west-2.amazonaws.com/5dfa7e63-6032-4d84-bead-312aba22a447/f5990483-d724-476d-b802-1fdcf203c0a9/download_(1).png)
+![DINO Small 16 Attention Map](Results/DINO_Small_16.png)  
+*DINO Small 16 Attention Map*
 
 ---
 
@@ -68,9 +80,11 @@ The **DINO Base** models (ViT-B/8 and ViT-B/16) with larger architectures captur
 - The **DINO Base** models demonstrated sophisticated attention, with **ViT-B/16** capturing larger, coarser features, while **ViT-B/8** zoomed into intricate hand motions.
 - These models proved highly suitable for hand gesture recognition tasks, showcasing their ability to differentiate various hand shapes and movements.
 
-![Visualization of attention maps of Dino_base_8 for five Irish Sign Language hand signs](https://prod-files-secure.s3.us-west-2.amazonaws.com/5dfa7e63-6032-4d84-bead-312aba22a447/cf9b78a8-d176-4784-aa76-cbcbd138d54b/download_(1).png)
+![DINO Base 8 Attention Map](Results/DINO_Base_8.png)  
+*DINO Base 8 Attention Map*
 
-![Visualization of attention maps of Dino_base_16 for five Irish Sign Language hand signs](https://prod-files-secure.s3.us-west-2.amazonaws.com/5dfa7e63-6032-4d84-bead-312aba22a447/c4cf7fb7-1f63-432e-a0a8-6b8bba30355e/download.png)
+![DINO Base 16 Attention Map](Results/DINO_Base_16.png)  
+*DINO Base 16 Attention Map*
 
 ---
 
