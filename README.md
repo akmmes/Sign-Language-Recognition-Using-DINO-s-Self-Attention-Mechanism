@@ -11,13 +11,19 @@ Enhance the recognition and understanding of micro and macro features of sign la
 - **DINO Base 16x16**
 
 ## Dataset:
-The dataset used for this project is the **Irish Sign Language (ISL) Dataset**, which is available on [ResearchGate](https://www.researchgate.net/publication/319493254_A_Dataset_for_Irish_Sign_Language_Recognition).
+
+The dataset used for this project is a **new image dataset for Irish Sign Language (ISL) recognition**, created as part of ongoing work in the field of ISL recognition using pattern recognition methods.
 
 ### Key Information about the Dataset:
-- **Dataset Name**: A Dataset for Irish Sign Language Recognition
-- **Content**: This dataset consists of images for various hand gestures representing Irish Sign Language (ISL) symbols. It includes gestures for different words and phrases commonly used in Irish Sign Language.
-- **Image Format**: The dataset contains pre-captured images of hand gestures, which were used for training the model to understand and recognize specific gestures.
-- **Application**: This dataset is particularly useful for training models for sign language recognition, enabling the automation of sign language interpretation through computer vision.
+- **Dataset Name**: Irish Sign Language Recognition Dataset
+- **Content**: The dataset consists of 468 videos of human subjects performing ISL hand-shapes and movements. Frames were extracted from these videos, resulting in a total of **58,114 images** representing **23 common hand-shapes** in ISL.
+- **Image Format**: The images in the dataset are derived from the extracted frames of the videos.
+- **Application**: This dataset is designed for training models to recognize hand gestures in Irish Sign Language, enabling automation of sign language interpretation using computer vision. It is part of ongoing work in ISL recognition using advanced pattern recognition techniques.
+
+The dataset has been tested using **Principal Component Analysis (PCA)**, achieving **95% recognition accuracy** in initial experiments.
+
+You can access the full dataset and further details on [ResearchGate](https://www.researchgate.net/publication/319493254_A_Dataset_for_Irish_Sign_Language_Recognition).
+
 
 ## Approach:
 1. **Model Utilization**:  
