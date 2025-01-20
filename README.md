@@ -20,8 +20,6 @@ The dataset used for this project is a **new image dataset for Irish Sign Langua
 - **Image Format**: The images in the dataset are derived from the extracted frames of the videos.
 - **Application**: This dataset is designed for training models to recognize hand gestures in Irish Sign Language, enabling automation of sign language interpretation using computer vision. It is part of ongoing work in ISL recognition using advanced pattern recognition techniques.
 
-The dataset has been tested using **Principal Component Analysis (PCA)**, achieving **95% recognition accuracy** in initial experiments.
-
 You can access the full dataset and further details on [ResearchGate](https://www.researchgate.net/publication/319493254_A_Dataset_for_Irish_Sign_Language_Recognition).
 
 
